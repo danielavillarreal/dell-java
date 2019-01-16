@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Calculator {
 	
 	public static void main(String[] args) {
+		
     System.out.println("Please type a number to the console.");
 	Scanner reader = new Scanner(System.in);
 	int firstNum = reader.nextInt(); //Reads first number from user

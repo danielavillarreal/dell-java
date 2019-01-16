@@ -30,26 +30,41 @@ public class RockPaperScissors {
 	}
 	
 	public static String calculateWinner(String playerHand, String player2Hand) {
-		String winner = "tie";
+		
+		String winner = "";
+		
+		//if user enters rock/Rock
 		if (player2Hand.equals("rock") || player2Hand.equals("Rock")) {
 			if (playerHand.equals("Paper")) {
 				winner = "Computer";
 			} else if (playerHand.equals("Scissors")) {
 				winner = "You";
+			} else if (playerHand.equals("Rock")) {
+				winner = "Tie";
 			}
+			
+		//If user enters paper/Paper
 		} else if (playerHand.equals("paper") || player2Hand.equals("Paper")) {
 			if (playerHand.equals("Scissors")) {
 				winner = "Computer";
 			} else if (playerHand.equals("Rock")) {
 				winner = "You";
+			} else if (playerHand.equals("Paper")) {
+				winner = "Tie";
 			}
+			
+		//if user enters scissors/Scissors
 		} else if (player2Hand.equals("scissors") || player2Hand.equals("Scissors")) {
 			if (player2Hand.equals("Paper")) {
 				winner = "You";
 			} else if (playerHand.equals("Rock")) {
 				winner = "Computer";
-			}
+			} else if (playerHand.equals("Scissors")) {
+				winner = "Tie";
+			}	
 		}
+		
 		return winner;
+		
 		}
 }
