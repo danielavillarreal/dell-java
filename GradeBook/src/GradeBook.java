@@ -29,7 +29,7 @@ public class GradeBook {
 			System.out.println("What is the student's name?");
 			String name = reader.nextLine();
 			
-			System.out.println("Please enter grades in a comma separated list.");
+			System.out.println("Please enter grades in a comma separated list (with spaces). Ex) 90, 100, 85");
 			String grades = reader.nextLine();
 			
 			//Add user's name and grades into Map
