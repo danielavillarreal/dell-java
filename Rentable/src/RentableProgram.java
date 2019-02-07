@@ -47,7 +47,7 @@ public class RentableProgram {
 		
 		//Loops through the list to get the rate according to the number of days
 		for (int i = 0; i < rentalList.length; i++) {
-			System.out.println(rentalList[i].getDescription() + " with a price of " + rentalList[i].getPrice(numberOfDays) +
+			System.out.println(rentalList[i].getDescription() + " with a price of $" + rentalList[i].getPrice(numberOfDays) +
 					" for " + numberOfDays + " days.");
 		}
 		
