@@ -37,10 +37,9 @@ public class ParkingGarage {
 		if (!(carArray[spot] == null)) {
 			System.out.println("Cannot place car in parking spot " + spot + " because it is taken."); }
 			else carArray[spot] = car;
+		//Calls the super method and adds the bed size
 		} catch(Exception e) {
 			System.out.println("Cannot place car in spot " + spot + " because it does not exist.");
-		//checks to see if spot exists
-		
 		} 
 
 			

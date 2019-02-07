@@ -55,7 +55,7 @@ public class GarageManager {
 		secondGarage.park(fourthCar, 4);
 		
 		//Vacates the Chevy Malibu from the secondGarage
-		//secondGarage.vacate(4);
+		secondGarage.vacate(4);
 		
 		//Prints the second garage's inventory
 		secondGarage.printInventory();
