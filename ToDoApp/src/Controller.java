@@ -94,7 +94,7 @@ public class Controller {
 			consoleUtils.printList(entries);
 		}
 		//lists completed items
-		else if (listType.equals("complete")) {
+		else if (listType.equals("done")) {
 			List<ToDoItem> entries = toDoList.getCompleted();
 			consoleUtils.printList(entries);
 		}
